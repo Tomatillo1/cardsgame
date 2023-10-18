@@ -4,7 +4,7 @@
 </script>
 
 <label for="players">{whatPlayer}</label>
-<input type="text" name="players" class="players" placeholder="Nom du joueur" bind:value>
+<input type="text" name="players" class="players" placeholder="Nom du joueur" maxlength="10" bind:value>
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
