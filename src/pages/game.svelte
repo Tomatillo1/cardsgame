@@ -18,15 +18,15 @@
     <div class="menuPlayers">
         <Menu whatIsPerson={name1}/>
         <div class="cardsPacks">
-            <Cards/>
-            <Cards/>
+            <Cards backgroundCards={"https://www.deckofcardsapi.com/static/img/back.png"} />
+            <Cards backgroundCards="any"/>
         </div>
     </div>
     <div class="menuPlayers">
         <Menu whatIsPerson={name2}/>
         <div class="cardsPacks">
-            <Cards/>
-            <Cards/>
+            <Cards backgroundCards={"https://www.deckofcardsapi.com/static/img/back.png"}/>
+            <Cards backgroundCards="any"/>
         </div>
     </div>
 </div>
@@ -43,7 +43,6 @@
             width: 50%;
             align-items: center;
             height: 100%;
-            gap: 2rem;
         }
 
         h1 {
