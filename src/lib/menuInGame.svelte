@@ -1,10 +1,11 @@
 <script>
     export let whatIsPerson
+    export let whatIsScore
 </script>
 
 <div class="menuOrder">
     <p>{whatIsPerson}</p>
-    <p>0</p>
+    <p>{whatIsScore}</p>
 </div>
 
 

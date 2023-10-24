@@ -8,13 +8,13 @@
 
     function playGame() {
 
-
         if (newValue1 === '' && newValue2 === '') {
             alert("Aucun joueur n'a pas été défini")
         } else if (newValue1 === '' || newValue2 === '') {
             alert("Un des joueurs n'a pas été défini")
         } else {
             navigate(`/game?namePlayer1=${newValue1}&namePlayer2=${newValue2}`)
+
         }
     }
 </script>
