@@ -5,6 +5,8 @@
     let deck1;
     export let name1;
     export let name2;
+    export let result;
+    export let result2;
     export let reverseCards;
     export let scoring;
 
@@ -39,7 +41,7 @@
                 reverseCards(image, image2)
                 scoring(cardsValue, cardsValue2)
                 if (users.remaining === 0) {
-                    navigate(`/popup?namePlayer1=${name1}&namePlayer2=${name2}`)
+                    navigate(`/popup?namePlayer1=${name1}&namePlayer2=${name2}&scorePlayer1=${result}&scorePlayer2=${result2}`)
                 }
             });
     }
@@ -57,5 +59,18 @@
         padding: 0.25rem 0.5rem 0.25rem 0.5rem;
         width: 20%;
         align-self: center;
+    }
+
+    @media screen and (max-width: 767px){
+        .play {
+            width: 55%;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px){
+        .play {
+            width: 55%;
+            font-size: 2rem;
+        }
     }
 </style>

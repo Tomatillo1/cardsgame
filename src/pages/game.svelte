@@ -11,7 +11,6 @@
     let result = 0
     let result2 = 0
 
-
     function returnButton() {
         history.back()
     }
@@ -22,8 +21,8 @@
 
     }
 
-    function scoring (cardsValue, cardsValue2) {
-        let score;
+    function scoring(cardsValue, cardsValue2) {
+      let score;
         let score2;
         switch (cardsValue) {
             case "2" :
@@ -132,22 +131,22 @@
             <Cards backgroundCards={imagelink}/>
         </div>
     </div>
-    <div class="menuPlayers">
+    <div class="menuPlayers2">
         <Menu whatIsPerson={name2} whatIsScore={result2}/>
-        <div class="cardsPacks">
+        <div class="cardsPacks2">
             <Cards backgroundCards={imagelink2}/>
             <Cards backgroundCards={"https://www.deckofcardsapi.com/static/img/back.png"}/>
         </div>
     </div>
 </div>
-<PlayButton {reverseCards} {scoring} {name1} {name2}/>
+<PlayButton {reverseCards} {scoring} {name1} {name2} {result} {result2}/>
 <style>
     .allPage {
         display: flex;
         height: 75%;
     }
 
-    .menuPlayers {
+    .menuPlayers, .menuPlayers2 {
         display: flex;
         flex-direction: column;
         width: 50%;
@@ -174,7 +173,7 @@
         left: 0.5rem;
     }
 
-    .cardsPacks {
+    .cardsPacks, .cardsPacks2 {
         display: flex;
         flex-direction: row;
         width: 100%;
@@ -182,5 +181,35 @@
         justify-content: center;
         align-items: center;
         gap: 1rem;
+    }
+
+    @media screen and (max-width: 767px){
+        .cardsPacks {
+            display: flex;
+            flex-direction: column;
+        }
+        .cardsPacks2 {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px){
+        .cardsPacks {
+            display: flex;
+            flex-direction: column;
+        }
+        .cardsPacks2 {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        h1 {
+           font-size: 4rem;
+        }
+        .returnButton {
+            font-size: 2rem;
+            top: 1rem;
+            left: 1rem;
+        }
     }
 </style>

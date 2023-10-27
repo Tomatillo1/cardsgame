@@ -31,4 +31,20 @@
         font-family: "Poppins", sans-serif;
         font-size: 1.5rem;
     }
+
+    @media screen and (max-width: 767px){
+        .players {
+            width: 50%;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px){
+        .players {
+            width: 50%;
+            font-size: 2rem;
+        }
+        label {
+            font-size: 3rem;
+        }
+    }
 </style>

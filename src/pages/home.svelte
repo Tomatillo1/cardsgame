@@ -57,4 +57,20 @@
         margin-top: 1rem;
     }
 
+    @media screen and (max-width: 767px){
+        .playButton {
+            width: 30%;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px){
+        .playButton {
+            width: 30%;
+            font-size: 2rem;
+        }
+        h1 {
+            font-size: 4rem;
+        }
+    }
+
 </style>
